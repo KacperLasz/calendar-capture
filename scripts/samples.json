@@ -1,0 +1,25 @@
+[
+  { "text": "lunch with Mum Saturday 1pm", "expect": { "status": "ok", "events": 1, "type": "event" } },
+  { "text": "dentist tuesday half two", "expect": { "status": "ok", "events": 1, "type": "event" } },
+  { "text": "meeting with Sam Thursday", "expect": { "status": "needs_clarification" } },
+  { "text": "Mum's birthday on the 14th", "expect": { "status": "ok", "events": 1, "all_day": true } },
+  { "text": "gym at 6 then dinner with Aoife at 8 tomorrow", "expect": { "status": "ok", "events": 2 } },
+  { "text": "dinner tonight", "expect": { "status": "needs_clarification" } },
+  { "text": "call the bank next week", "expect": { "status": "needs_clarification" } },
+  { "text": "doctor yesterday at 3", "expect": { "status": "needs_clarification" } },
+
+  { "text": "remind me to call the bank tomorrow at 2", "expect": { "status": "ok", "events": 1, "type": "reminder" } },
+  { "text": "set a reminder for Friday at 5pm to book flights", "expect": { "status": "ok", "events": 1, "type": "reminder" } },
+  { "text": "remind me to take the bins out Thursday", "expect": { "status": "ok", "events": 1, "type": "reminder" } },
+  { "text": "remind me to call Mum", "expect": { "status": "needs_clarification" } },
+  { "text": "call the bank tomorrow at 2", "expect": { "status": "ok", "events": 1, "type": "event" } },
+
+  { "text": "yoga every Monday at 7pm for 4 weeks", "expect": { "status": "ok", "events": 4, "type": "event" } },
+  { "text": "team standup every weekday at 9:30 for 2 weeks", "expect": { "status": "ok", "events": 10 } },
+  { "text": "bin day every other Wednesday at 8am, 3 times", "expect": { "status": "ok", "events": 3 } },
+  { "text": "remind me every day at 8am to take vitamins for 5 days", "expect": { "status": "ok", "events": 5, "type": "reminder" } },
+  { "text": "remind me every Sunday at 6pm to put the bins out for 3 weeks", "expect": { "status": "ok", "events": 3, "type": "reminder" } },
+  { "text": "Mum's birthday every 14th of November", "expect": { "status": "ok", "all_day": true } },
+  { "text": "yoga every Monday at 7pm", "expect": { "status": "ok", "type": "event" } },
+  { "text": "gym on the first Monday of every month at 6pm", "expect": { "status": "error" } }
+]
